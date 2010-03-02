@@ -2,8 +2,22 @@
 <project name="Ant Build">
 	
 	<property name="src.dir" value="${basedir}/../src" />
+	<property name="release.dir" value="${basedir}/../build" />
 	<property name="docs.dir" value="${basedir}/../docs" />
 	<property name="main.class" value="com.thesven.audio.soundcontroller.SoundController.as" />
 	<property name="project.name" value="SoundManager" />
+	
+	
+	<target name="compile-swc">
+		<echo>[reset] resetting fcsh</echo>
+		<fdt.launch.resetFCSH/>
+		
+		<echo>[compile] Compiling release SWC</echo>
+		<fdt.launch.library projectname="${project.name}"
+							target="${release.dir}/SoundController.swc"
+							compilerarguments="-target-player=10
+											   -use-network=false"/>
+		
+	</target>
 	
 </project>
