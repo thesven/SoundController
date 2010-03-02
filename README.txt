@@ -1,1 +1,1 @@
-SoundManager
+SoundManager is a class for managin and playing audio with as3.
