@@ -23,7 +23,7 @@
 	</target>
 		
 	<target name="generate-docs-mac">
-		<echo>[generating] documentation</echo>
+		<echo>[generating] documentation on mac</echo>
 		<exec executable="${asdoc.loc.mac}">
 			<arg line="-doc-sources '${src.dir}'
 					   -output '${docs.dir}'
@@ -34,14 +34,14 @@
 	</target>
 	
 	<target name="generate-docs-win">
-			<echo>[generating] documentation</echo>
-			<exec executable="${asdoc.loc.win}">
-				<arg line="-doc-sources '${src.dir}'
-						   -output '${docs.dir}'
-						   -main-title 'SoundController'
-						   -window-title 'SoundController API Docs'
-					       -target-player=10"/>
-			</exec>
-		</target>
+		<echo>[generating] documentation on windows</echo>
+		<exec executable="${asdoc.loc.win}">
+			<arg line="-doc-sources '${src.dir}'
+					   -output '${docs.dir}'
+					   -main-title 'SoundController'
+					   -window-title 'SoundController API Docs'
+				      -target-player=10"/>
+		</exec>
+	</target>
 	
 </project>
