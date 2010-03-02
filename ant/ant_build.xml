@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant Build">
+	
+	<property name="src.dir" value="${basedir}/../src" />
+	<property name="docs.dir" value="${basedir}/../docs" />
+	<property name="main.class" value="com.thesven.audio.soundcontroller.SoundController.as" />
+	<property name="project.name" value="SoundManager" />
+	
+</project>
