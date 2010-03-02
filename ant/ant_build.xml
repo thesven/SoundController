@@ -17,7 +17,17 @@
 							target="${release.dir}/SoundController.swc"
 							compilerarguments="-target-player=10
 											   -use-network=false"/>
+	</target>
 		
+	<target name="generate-docs">
+		<echo>[generating] documentation</echo>
+		<exec executable="/flex_sdk/bin/asdoc">
+			<arg line="-doc-sources '${src.dir}'
+					   -output '${docs.dir}'
+					   -main-title 'SoundController'
+					   -window-title 'SoundController API Docs'
+				       -target-player=10"/>
+		</exec>
 	</target>
 	
 </project>
