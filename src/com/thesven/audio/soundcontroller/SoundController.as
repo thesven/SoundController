@@ -153,6 +153,28 @@ package com.thesven.audio.soundcontroller {
 		}
 		
 		/**
+		 * <p> can be used to add a sound to an existing sound group</p>
+		 * @param sndName:String - the name of the sound you wish to add
+		 * @param groupName:String - the name of the group you wish to add the sound too
+		 * @return void
+		 */
+		public function addSoundToGroup(sndName:String, groupName:String):void{
+			
+			if(checkForExistingName(sndName, "sound")){
+				if(checkForExistingName(groupName, "group")){
+					var group:SoundGroup = _soundGroupDict[groupName];
+					var sndObj:SoundObject = _soundsDict[sndName];
+					group.addSoundObjectToGroup(sndObj);
+				} else {
+					SoundControllerUtils.throwError('SoundController', 'addSoundToGroup', 'There is no sound group with the name' + groupName);
+				}
+			} else {
+				SoundControllerUtils.throwError('SoundController', 'addSoundToGroup', 'There is no sound with the name' + sndName);
+			}
+			
+		}
+
+		/**
 		 * <p>Used to remove a sound from the controller</p>
 		 * <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
 		 * <p>Dispatches the SOUND_REMOVED DataEvent with a value of "sndName"</p>
