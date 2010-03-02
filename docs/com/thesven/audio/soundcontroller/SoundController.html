@@ -1,196 +1,1122 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="SoundController,com.thesven.audio.soundcontroller.SoundController,GLOBAL_VOLUME_CHANGE,GROUP_ADDED,GROUP_REMOVED,SOUND_ADDED,SOUND_REMOVED,_soundController,_soundGroupDict,_soundGroups,_soundsDict,_sounds,addEmbededOrLibrarySound,addExternalSound,createSoundGroup,fadeSoundGroupVolume,fadeSoundVolume,getInstance,muteGlobalAudio,pauseAllSounds,pauseSound,pauseSoundGroup,playAllSounds,playSound,playSoundGroup,removeAllSounds,removeSound,removeSoundGroup,setGobalVolume,setSoundLoops,setSoundStartTime,setSoundVolume,stopAllSounds,stopSound,stopSoundGroup,unmuteGlobalAudio"><title>com.thesven.audio.soundcontroller.SoundController</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
-				asdocTitle = 'SoundController - SoundController Documentation';
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="SoundController,com.thesven.audio.soundcontroller.SoundController,GLOBAL_VOLUME_CHANGE,GROUP_ADDED,GROUP_REMOVED,SOUND_ADDED,SOUND_REMOVED,_soundController,_soundGroupDict,_soundGroups,_sounds,_soundsDict,addEmbededOrLibrarySound,addExternalSound,addSoundToGroup,createSoundGroup,fadeSoundGroupVolume,fadeSoundVolume,getInstance,muteGlobalAudio,pauseAllSounds,pauseSound,pauseSoundGroup,playAllSounds,playSound,playSoundGroup,removeAllSounds,removeSound,removeSoundGroup,setGobalVolume,setSoundLoops,setSoundStartTime,setSoundVolume,stopAllSounds,stopSound,stopSoundGroup,unmuteGlobalAudio" name="keywords">
+<title>com.thesven.audio.soundcontroller.SoundController</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'SoundController - SoundController API Docs';
 				var baseRef = '../../../../';
 				window.onload = configPage;
 			--></script>
-<script type="text/javascript">
-			scrollToNameAnchor();
-		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">SoundController Docs</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/thesven/audio/soundcontroller/SoundController.html&amp;com/thesven/audio/soundcontroller/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">SoundController</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
-				<!--
-				
-					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SoundController"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
-				-->
-			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.thesven.audio.soundcontroller</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  SoundController</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SoundController  <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
-	 <p></p><br/><hr></div><a name="protectedPropertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_soundController" class="signatureLink">_soundController</a> : <a href="../../../../com/thesven/audio/soundcontroller/SoundController.html">SoundController</a><div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_soundGroupDict" class="signatureLink">_soundGroupDict</a> : Dictionary<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_soundGroups" class="signatureLink">_soundGroups</a> : Vector.&lt;<a href="../../../../com/thesven/audio/soundcontroller/objects/SoundGroup.html">SoundGroup</a>&gt;<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_sounds" class="signatureLink">_sounds</a> : Vector.&lt;<a href="../../../../com/thesven/audio/soundcontroller/objects/SoundObject.html">SoundObject</a>&gt;<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_soundsDict" class="signatureLink">_soundsDict</a> : Dictionary<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">SoundController</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#SoundController()" class="signatureLink">SoundController</a>()</div><div class="summaryTableDescription">
-		 Main Constructor
-		 PLEASE DO NOT USE THIS
-		 SoundController is a singleton class.</div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEmbededOrLibrarySound()" class="signatureLink">addEmbededOrLibrarySound</a>(sndClassName:Class, sndName:String, vol:Number = 1, startTime:Number = 0, loops:int = 0):Boolean</div><div class="summaryTableDescription">
-		 Used to add a sound that has been added to your library or embeded as a class in your project
-		 Dispatches the SOUND_ADDED DataEvent with a value of "sndName"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addExternalSound()" class="signatureLink">addExternalSound</a>(sndPath:String, sndName:String, buffer:Number = 1000, vol:Number = 1, startTime:Number = 0, loops:int = 0, checkPolicyFile:Boolean = false):Boolean</div><div class="summaryTableDescription">
-		 Used to add a sound that is extrnaly located
-		 Dispatches the SOUND_ADDED DataEvent with a value of "sndName"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createSoundGroup()" class="signatureLink">createSoundGroup</a>(sndGrpName:String, groupItems:Vector.&lt;String&gt;):Boolean</div><div class="summaryTableDescription">
-		 Used to create a new sound group
-		 In order to create a sound group all of the sounds must all ready be added using addEmbededOrLibrarySound or addExternalSound
-		 Using a sound group you can manage the state of one or more sounds by using a single call ie.</div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#fadeSoundGroupVolume()" class="signatureLink">fadeSoundGroupVolume</a>(groupName:String, length:Number, targetVol:Number):void</div><div class="summaryTableDescription">
-		 fades the volume of a sound group to a specified volume over a length of time
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#fadeSoundVolume()" class="signatureLink">fadeSoundVolume</a>(sndName:String, length:Number, targetVol:Number):void</div><div class="summaryTableDescription">
-		 fades the volume of a sound to a specified volume over a length of time
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInstance()" class="signatureLink">getInstance</a>():<a href="../../../../com/thesven/audio/soundcontroller/SoundController.html">SoundController</a></div><div class="summaryTableDescription">[static] 
-		 Used to return the current instance of the class
-		 Please use this insted of the Main Constructor
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#muteGlobalAudio()" class="signatureLink">muteGlobalAudio</a>():void</div><div class="summaryTableDescription">
-		 This method is used to mute the global volume of a flash project using SoundMixer
-		 Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL MUTE"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseAllSounds()" class="signatureLink">pauseAllSounds</a>():void</div><div class="summaryTableDescription">
-		 Used to pause all sounds in the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseSound()" class="signatureLink">pauseSound</a>(sndName:String):void</div><div class="summaryTableDescription">
-		 used to pause a sound that is playing
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseSoundGroup()" class="signatureLink">pauseSoundGroup</a>(sndGroupName:String):void</div><div class="summaryTableDescription">
-		 Used to pause a sound group that is currently playing
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#playAllSounds()" class="signatureLink">playAllSounds</a>():void</div><div class="summaryTableDescription">
-		 Used to play all of the sounds in the library at once
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#playSound()" class="signatureLink">playSound</a>(sndName:String, useSndProps:Boolean = true, volume:Number = 1, startTime:Number = 0, loops:int = 0, useDelay:Boolean = false, delayInSeconds:Number = 0):void</div><div class="summaryTableDescription">
-		 Used to play a sound that has been added to the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#playSoundGroup()" class="signatureLink">playSoundGroup</a>(groupName:String):void</div><div class="summaryTableDescription">
-		 Used to play a sound group that has been registered with the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAllSounds()" class="signatureLink">removeAllSounds</a>():void</div><div class="summaryTableDescription">
-		 Used to remove all of the sounds from the controller
-		 Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed
-		 Dispatches the SOUND_ADDED DataEvent with a value of "ALL SOUNDS"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeSound()" class="signatureLink">removeSound</a>(sndName:String):Boolean</div><div class="summaryTableDescription">
-		 Used to remove a sound from the controller
-		 Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed
-		 Dispatches the SOUND_REMOVED DataEvent with a value of "sndName"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeSoundGroup()" class="signatureLink">removeSoundGroup</a>(sndGroupName:String):Boolean</div><div class="summaryTableDescription">
-		 Used to remove a sound group from the controller
-		 Once a sound group is removed from the controller all referances and listeners will be removed.
-		 The sounds associated with the group will still remain the in controller
-		 Dispatches the GROUP_REMOVED DataEvent with a value of "sndGroupName"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setGobalVolume()" class="signatureLink">setGobalVolume</a>(globalVol:Number):void</div><div class="summaryTableDescription">
-		 this method is used to set the global volume of a flash project using SoundMixer
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSoundLoops()" class="signatureLink">setSoundLoops</a>(sndName:String, loopAmount:int):void</div><div class="summaryTableDescription">
-		 Sets the amount of loops for a sound that has been registered with the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSoundStartTime()" class="signatureLink">setSoundStartTime</a>(sndName:String, startTime:Number):void</div><div class="summaryTableDescription">
-		 Sets the start time of a sound that has been registered with the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSoundVolume()" class="signatureLink">setSoundVolume</a>(sndName:String, newVol:Number):void</div><div class="summaryTableDescription">
-		 Sets the volume of a sound that has been registered with the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopAllSounds()" class="signatureLink">stopAllSounds</a>():void</div><div class="summaryTableDescription">
-		 Used to stop all sounds in the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopSound()" class="signatureLink">stopSound</a>(sndName:String):void</div><div class="summaryTableDescription">
-		 Used to stop a sound
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopSoundGroup()" class="signatureLink">stopSoundGroup</a>(sndGroupName:String):void</div><div class="summaryTableDescription">
-		 Used to stop a sound group that has been registered with the controller
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unmuteGlobalAudio()" class="signatureLink">unmuteGlobalAudio</a>():void</div><div class="summaryTableDescription">
-		 This method is used to unmute the global volume of a flash project using SoundMixer
-		 Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL UNMUTE"
-		 </div></td><td class="summaryTableOwnerCol">SoundController</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#GLOBAL_VOLUME_CHANGE" class="signatureLink">GLOBAL_VOLUME_CHANGE</a> : String = theGlobalVolumeHasBeenChanged<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#GROUP_ADDED" class="signatureLink">GROUP_ADDED</a> : String = aSoundGroupHasBeenAddedToSoundController<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#GROUP_REMOVED" class="signatureLink">GROUP_REMOVED</a> : String = aSoundGroupHasBeenRemovedToSoundController<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SOUND_ADDED" class="signatureLink">SOUND_ADDED</a> : String = aSoundHasBeenAddedToSoundController<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SOUND_REMOVED" class="signatureLink">SOUND_REMOVED</a> : String = aSoundHasBeenRemovedFromSoundController<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">SoundController</td></tr></table></div><script language="javascript" type="text/javascript"><!--
-										showHideInherited();
-										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="_soundController"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_soundController</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>protected static var _soundController:<a href="../../../../com/thesven/audio/soundcontroller/SoundController.html">SoundController</a></code><p></p></div><a name="propertyDetail"></a><a name="_soundGroupDict"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_soundGroupDict</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _soundGroupDict:Dictionary</code><p></p></div><a name="propertyDetail"></a><a name="_soundGroups"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_soundGroups</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _soundGroups:Vector.&lt;<a href="com/thesven/audio/soundcontroller/objects/SoundGroup.html">SoundGroup</a>&gt;</code><p></p></div><a name="propertyDetail"></a><a name="_sounds"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_sounds</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _sounds:Vector.&lt;<a href="com/thesven/audio/soundcontroller/objects/SoundObject.html">SoundObject</a>&gt;</code><p></p></div><a name="propertyDetail"></a><a name="_soundsDict"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_soundsDict</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _soundsDict:Dictionary</code><p></p></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="SoundController()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SoundController</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function SoundController()</code><p></p><p>
-		 <p>Main Constructor</p>
-		 <p>PLEASE DO NOT USE THIS</p>
-		 <p>SoundController is a singleton class.  You will need to use the getInstance() method</p>
-		 </p><p><span class="label">See also</span></p><div class="seeAlso">getInstance</div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addEmbededOrLibrarySound()"></a><a name="addEmbededOrLibrarySound(Class,String,Number,Number,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addEmbededOrLibrarySound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addEmbededOrLibrarySound(sndClassName:Class, sndName:String, vol:Number = 1, startTime:Number = 0, loops:int = 0):Boolean</code><p></p><p></p><p>
-		 <p>Used to add a sound that has been added to your library or embeded as a class in your project</p>
-		 <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndClassName</span>:Class</code> &mdash; - the class of the sound that you would like to use
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name you wish to use for the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">vol</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - the volume at which the sound should be played
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - the start time to be used when playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - the amount of loops that the should should be played
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
-		 </td></tr></table></div><a name="addExternalSound()"></a><a name="addExternalSound(String,String,Number,Number,Number,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addExternalSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addExternalSound(sndPath:String, sndName:String, buffer:Number = 1000, vol:Number = 1, startTime:Number = 0, loops:int = 0, checkPolicyFile:Boolean = false):Boolean</code><p></p><p></p><p>
-		 <p>Used to add a sound that is extrnaly located</p>
-		 <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndPath</span>:String</code> &mdash; - the direct path or url the sound you wish to use
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name you wish you use for this sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">buffer</span>:Number</code> (default = <code>1000</code>)<code></code> &mdash; - the amount of buffer to be used on the external sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">vol</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - the volume to be used when playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - the start time to be used when playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - the amount of loops this sound should be played
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">checkPolicyFile</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; - is there a policy file that needs to be checked while loading the sound file
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
-		 </td></tr></table></div><a name="createSoundGroup()"></a><a name="createSoundGroup(String,Vector$String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">createSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createSoundGroup(sndGrpName:String, groupItems:Vector.&lt;String&gt;):Boolean</code><p></p><p></p><p>
-		 <p>Used to create a new sound group</p>
-		 <p>In order to create a sound group all of the sounds must all ready be added using addEmbededOrLibrarySound or addExternalSound</p>
-		 <p>Using a sound group you can manage the state of one or more sounds by using a single call ie. play, stop, pause</p>
-		 <p>Individual sounds may be used in more than one group</p>
-		 <p>Dispatches the GROUP_ADDED DataEvent with a value of "sndGroupName"</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndGrpName</span>:String</code> &mdash; - the name you wish to use for the sound group
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">groupItems</span>:Vector.&lt;String&gt;</code> &mdash; - a vector containing the names of the sound objects to be used in the sound group
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
-		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso">addEmbededOrLibrarySound<br/>addExternalSound</div></div><a name="fadeSoundGroupVolume()"></a><a name="fadeSoundGroupVolume(String,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">fadeSoundGroupVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function fadeSoundGroupVolume(groupName:String, length:Number, targetVol:Number):void</code><p></p><p></p><p>
-		 <p>fades the volume of a sound group to a specified volume over a length of time</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">groupName</span>:String</code> &mdash; - the name of the sound group whos volume you wish to fade
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">length</span>:Number</code> &mdash; - the length of the fade in seconds
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">targetVol</span>:Number</code> &mdash; - the volume you wish to fade to ... value 0-1
-		 </td></tr></table></p></div><a name="fadeSoundVolume()"></a><a name="fadeSoundVolume(String,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">fadeSoundVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function fadeSoundVolume(sndName:String, length:Number, targetVol:Number):void</code><p></p><p></p><p>
-		 <p>fades the volume of a sound to a specified volume over a length of time</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound whos volume you wish to fade
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">length</span>:Number</code> &mdash; - the length of the fade in seconds
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">targetVol</span>:Number</code> &mdash; - the volume you wish to fade to ... value 0-1
-		 </td></tr></table></p></div><a name="getInstance()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getInstance</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getInstance():<a href="../../../../com/thesven/audio/soundcontroller/SoundController.html">SoundController</a></code><p></p><p></p><p>
-		 <p>Used to return the current instance of the class</p>
-		 <p>Please use this insted of the Main Constructor</p>
-		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../com/thesven/audio/soundcontroller/SoundController.html">SoundController</a></code> &mdash; SoundController
-		 </td></tr></table></div><a name="muteGlobalAudio()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">muteGlobalAudio</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function muteGlobalAudio():void</code><p></p><p></p><p>
-		 <p>This method is used to mute the global volume of a flash project using SoundMixer</p>
-		 <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL MUTE"</p>
-		 </p></div><a name="pauseAllSounds()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pauseAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pauseAllSounds():void</code><p></p><p></p><p>
-		 <p>Used to pause all sounds in the controller</p>
-		 </p></div><a name="pauseSound()"></a><a name="pauseSound(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pauseSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pauseSound(sndName:String):void</code><p></p><p></p><p>
-		 <p>used to pause a sound that is playing</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to pause
-		 </td></tr></table></p></div><a name="pauseSoundGroup()"></a><a name="pauseSoundGroup(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pauseSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pauseSoundGroup(sndGroupName:String):void</code><p></p><p></p><p>
-		 <p>Used to pause a sound group that is currently playing</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you would wish to pause
-		 </td></tr></table></p></div><a name="playAllSounds()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">playAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function playAllSounds():void</code><p></p><p></p><p>
-		 <p>Used to play all of the sounds in the library at once</p>
-		 </p></div><a name="playSound()"></a><a name="playSound(String,Boolean,Number,Number,int,Boolean,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">playSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function playSound(sndName:String, useSndProps:Boolean = true, volume:Number = 1, startTime:Number = 0, loops:int = 0, useDelay:Boolean = false, delayInSeconds:Number = 0):void</code><p></p><p></p><p>
-		 <p>Used to play a sound that has been added to the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to play
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useSndProps</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; - would you like to use the current properties associated with the sound, or supply new ones through the method parameters
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">volume</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - if useSoundProps = true, this new volume will be used when playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - if useSoundProps = true, this new startTime will be used when playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - if useSoundProps = true, this amount will over ride the current amount of loops that the sound plays
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useDelay</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; - if true a delay will be used before playing the sound
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">delayInSeconds</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - if useDelay = true, the sound will be delayed "x" seconds before playing
-		 </td></tr></table></p></div><a name="playSoundGroup()"></a><a name="playSoundGroup(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">playSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function playSoundGroup(groupName:String):void</code><p></p><p></p><p>
-		 <p>Used to play a sound group that has been registered with the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">groupName</span>:String</code> &mdash; - the name of the sound group you wish to play
-		 </td></tr></table></p></div><a name="removeAllSounds()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeAllSounds():void</code><p></p><p></p><p>
-		 <p>Used to remove all of the sounds from the controller</p>
-		 <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
-		 <p>Dispatches the SOUND_ADDED DataEvent with a value of "ALL SOUNDS"</p>
-		 </p></div><a name="removeSound()"></a><a name="removeSound(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeSound(sndName:String):Boolean</code><p></p><p></p><p>
-		 <p>Used to remove a sound from the controller</p>
-		 <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
-		 <p>Dispatches the SOUND_REMOVED DataEvent with a value of "sndName"</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to remove
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
-		 </td></tr></table></div><a name="removeSoundGroup()"></a><a name="removeSoundGroup(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeSoundGroup(sndGroupName:String):Boolean</code><p></p><p></p><p>
-		 <p>Used to remove a sound group from the controller</p>
-		 <p>Once a sound group is removed from the controller all referances and listeners will be removed.</p>
-		 <p>The sounds associated with the group will still remain the in controller</p>
-		 <p>Dispatches the GROUP_REMOVED DataEvent with a value of "sndGroupName"</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you wish to remove
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
-		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso">removeSound</div></div><a name="setGobalVolume()"></a><a name="setGobalVolume(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setGobalVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setGobalVolume(globalVol:Number):void</code><p></p><p></p><p>
-		 <p>this method is used to set the global volume of a flash project using SoundMixer</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">globalVol</span>:Number</code> &mdash; - the new volume to be used
-		 <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL VOL CHANGE :: {globalVol}"</p>
-		 </td></tr></table></p></div><a name="setSoundLoops()"></a><a name="setSoundLoops(String,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setSoundLoops</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSoundLoops(sndName:String, loopAmount:int):void</code><p></p><p></p><p>
-		 <p>Sets the amount of loops for a sound that has been registered with the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the loop amount of
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">loopAmount</span>:int</code> &mdash; - the new amount of loops to use when playing the song
-		 </td></tr></table></p></div><a name="setSoundStartTime()"></a><a name="setSoundStartTime(String,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setSoundStartTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSoundStartTime(sndName:String, startTime:Number):void</code><p></p><p></p><p>
-		 <p>Sets the start time of a sound that has been registered with the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the start time of
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> &mdash; - the new start time to use
-		 </td></tr></table></p></div><a name="setSoundVolume()"></a><a name="setSoundVolume(String,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setSoundVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSoundVolume(sndName:String, newVol:Number):void</code><p></p><p></p><p>
-		 <p>Sets the volume of a sound that has been registered with the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the volume of
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">newVol</span>:Number</code> &mdash; - the volume to use
-		 </td></tr></table></p></div><a name="stopAllSounds()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopAllSounds():void</code><p></p><p></p><p>
-		 <p>Used to stop all sounds in the controller</p>
-		 </p></div><a name="stopSound()"></a><a name="stopSound(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopSound(sndName:String):void</code><p></p><p></p><p>
-		 <p>Used to stop a sound</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to stop
-		 </td></tr></table></p></div><a name="stopSoundGroup()"></a><a name="stopSoundGroup(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopSoundGroup(sndGroupName:String):void</code><p></p><p></p><p>
-		 <p>Used to stop a sound group that has been registered with the controller</p>
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you wish to stop
-		 </td></tr></table></p></div><a name="unmuteGlobalAudio()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">unmuteGlobalAudio</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unmuteGlobalAudio():void</code><p></p><p></p><p>
-		 <p>This method is used to unmute the global volume of a flash project using SoundMixer</p>
-		 <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL UNMUTE"</p>
-		 </p></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="GLOBAL_VOLUME_CHANGE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">GLOBAL_VOLUME_CHANGE</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const GLOBAL_VOLUME_CHANGE:String = theGlobalVolumeHasBeenChanged</code><p></p></div><a name="constantDetail"></a><a name="GROUP_ADDED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">GROUP_ADDED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const GROUP_ADDED:String = aSoundGroupHasBeenAddedToSoundController</code><p></p></div><a name="constantDetail"></a><a name="GROUP_REMOVED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">GROUP_REMOVED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const GROUP_REMOVED:String = aSoundGroupHasBeenRemovedToSoundController</code><p></p></div><a name="constantDetail"></a><a name="SOUND_ADDED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SOUND_ADDED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SOUND_ADDED:String = aSoundHasBeenAddedToSoundController</code><p></p></div><a name="constantDetail"></a><a name="SOUND_REMOVED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SOUND_REMOVED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SOUND_REMOVED:String = aSoundHasBeenRemovedFromSoundController</code><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Wed Feb 17 2010, 09:43 PM -05:00  </center></div></body></html><!--<br/>Wed Feb 17 2010, 09:43 PM -05:00  -->
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">SoundController</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/thesven/audio/soundcontroller/SoundController.html&amp;com/thesven/audio/soundcontroller/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;SoundController</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class SoundController"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.thesven.audio.soundcontroller</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class SoundController</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SoundController <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a><a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_soundController">_soundController</a> : <a href="../soundcontroller/SoundController.html">SoundController</a>
+<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_soundGroupDict">_soundGroupDict</a> : Dictionary<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_soundGroups">_soundGroups</a> : Vector<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_sounds">_sounds</a> : Vector<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_soundsDict">_soundsDict</a> : Dictionary<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#SoundController()">SoundController</a>()</div>
+<div class="summaryTableDescription">
+   <p>Main Constructor</p>
+   <p>PLEASE DO NOT USE THIS</p>
+   <p>SoundController is a singleton class.</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addEmbededOrLibrarySound()">addEmbededOrLibrarySound</a>(sndClassName:Class, sndName:String, vol:Number = 1, startTime:Number = 0, loops:int = 0):Boolean</div>
+<div class="summaryTableDescription">
+   <p>Used to add a sound that has been added to your library or embeded as a class in your project</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addExternalSound()">addExternalSound</a>(sndPath:String, sndName:String, buffer:Number = 1000, vol:Number = 1, startTime:Number = 0, loops:int = 0, checkPolicyFile:Boolean = false):Boolean</div>
+<div class="summaryTableDescription">
+   <p>Used to add a sound that is extrnaly located</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addSoundToGroup()">addSoundToGroup</a>(sndName:String, groupName:String):void</div>
+<div class="summaryTableDescription">
+   <p> can be used to add a sound to an existing sound group</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createSoundGroup()">createSoundGroup</a>(sndGrpName:String, groupItems:Vector):Boolean</div>
+<div class="summaryTableDescription">
+   <p>Used to create a new sound group</p>
+   <p>In order to create a sound group all of the sounds must all ready be added using addEmbededOrLibrarySound or addExternalSound</p>
+   <p>Using a sound group you can manage the state of one or more sounds by using a single call ie.</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fadeSoundGroupVolume()">fadeSoundGroupVolume</a>(groupName:String, length:Number, targetVol:Number):void</div>
+<div class="summaryTableDescription">
+   <p>fades the volume of a sound group to a specified volume over a length of time</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fadeSoundVolume()">fadeSoundVolume</a>(sndName:String, length:Number, targetVol:Number):void</div>
+<div class="summaryTableDescription">
+   <p>fades the volume of a sound to a specified volume over a length of time</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getInstance()">getInstance</a>():<a href="../soundcontroller/SoundController.html">SoundController</a>
+</div>
+<div class="summaryTableDescription">[static]
+   <p>Used to return the current instance of the class</p>
+   <p>Please use this insted of the Main Constructor</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#muteGlobalAudio()">muteGlobalAudio</a>():void</div>
+<div class="summaryTableDescription">
+   <p>This method is used to mute the global volume of a flash project using SoundMixer</p>
+   <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL MUTE"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pauseAllSounds()">pauseAllSounds</a>():void</div>
+<div class="summaryTableDescription">
+   <p>Used to pause all sounds in the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pauseSound()">pauseSound</a>(sndName:String):void</div>
+<div class="summaryTableDescription">
+   <p>used to pause a sound that is playing</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pauseSoundGroup()">pauseSoundGroup</a>(sndGroupName:String):void</div>
+<div class="summaryTableDescription">
+   <p>Used to pause a sound group that is currently playing</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#playAllSounds()">playAllSounds</a>():void</div>
+<div class="summaryTableDescription">
+   <p>Used to play all of the sounds in the library at once</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#playSound()">playSound</a>(sndName:String, useSndProps:Boolean = true, volume:Number = 1, startTime:Number = 0, loops:int = 0, useDelay:Boolean = false, delayInSeconds:Number = 0):void</div>
+<div class="summaryTableDescription">
+   <p>Used to play a sound that has been added to the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#playSoundGroup()">playSoundGroup</a>(groupName:String):void</div>
+<div class="summaryTableDescription">
+   <p>Used to play a sound group that has been registered with the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAllSounds()">removeAllSounds</a>():void</div>
+<div class="summaryTableDescription">
+   <p>Used to remove all of the sounds from the controller</p>
+   <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "ALL SOUNDS"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeSound()">removeSound</a>(sndName:String):Boolean</div>
+<div class="summaryTableDescription">
+   <p>Used to remove a sound from the controller</p>
+   <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
+   <p>Dispatches the SOUND_REMOVED DataEvent with a value of "sndName"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeSoundGroup()">removeSoundGroup</a>(sndGroupName:String):Boolean</div>
+<div class="summaryTableDescription">
+   <p>Used to remove a sound group from the controller</p>
+   <p>Once a sound group is removed from the controller all referances and listeners will be removed.</p>
+   <p>The sounds associated with the group will still remain the in controller</p>
+   <p>Dispatches the GROUP_REMOVED DataEvent with a value of "sndGroupName"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setGobalVolume()">setGobalVolume</a>(globalVol:Number):void</div>
+<div class="summaryTableDescription">
+   <p>this method is used to set the global volume of a flash project using SoundMixer</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSoundLoops()">setSoundLoops</a>(sndName:String, loopAmount:int):void</div>
+<div class="summaryTableDescription">
+   <p>Sets the amount of loops for a sound that has been registered with the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSoundStartTime()">setSoundStartTime</a>(sndName:String, startTime:Number):void</div>
+<div class="summaryTableDescription">
+   <p>Sets the start time of a sound that has been registered with the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSoundVolume()">setSoundVolume</a>(sndName:String, newVol:Number):void</div>
+<div class="summaryTableDescription">
+   <p>Sets the volume of a sound that has been registered with the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stopAllSounds()">stopAllSounds</a>():void</div>
+<div class="summaryTableDescription">
+   <p>Used to stop all sounds in the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stopSound()">stopSound</a>(sndName:String):void</div>
+<div class="summaryTableDescription">
+   <p>Used to stop a sound</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stopSoundGroup()">stopSoundGroup</a>(sndGroupName:String):void</div>
+<div class="summaryTableDescription">
+   <p>Used to stop a sound group that has been registered with the controller</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unmuteGlobalAudio()">unmuteGlobalAudio</a>():void</div>
+<div class="summaryTableDescription">
+   <p>This method is used to unmute the global volume of a flash project using SoundMixer</p>
+   <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL UNMUTE"</p>
+   </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#GLOBAL_VOLUME_CHANGE">GLOBAL_VOLUME_CHANGE</a> : String = "theGlobalVolumeHasBeenChanged"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#GROUP_ADDED">GROUP_ADDED</a> : String = "aSoundGroupHasBeenAddedToSoundController"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#GROUP_REMOVED">GROUP_REMOVED</a> : String = "aSoundGroupHasBeenRemovedToSoundController"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SOUND_ADDED">SOUND_ADDED</a> : String = "aSoundHasBeenAddedToSoundController"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SOUND_REMOVED">SOUND_REMOVED</a> : String = "aSoundHasBeenRemovedFromSoundController"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="_soundController"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_soundController</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected static var _soundController:<a href="../soundcontroller/SoundController.html">SoundController</a></code>
+</div>
+<a name="_soundGroupDict"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_soundGroupDict</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _soundGroupDict:Dictionary</code>
+</div>
+<a name="_soundGroups"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_soundGroups</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _soundGroups:Vector</code>
+</div>
+<a name="_sounds"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_sounds</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _sounds:Vector</code>
+</div>
+<a name="_soundsDict"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_soundsDict</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _soundsDict:Dictionary</code>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="SoundController()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SoundController</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function SoundController()</code><p>
+   </p><p>Main Constructor</p>
+   <p>PLEASE DO NOT USE THIS</p>
+   <p>SoundController is a singleton class.  You will need to use the getInstance() method</p>
+   <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">getInstance</div>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addEmbededOrLibrarySound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addEmbededOrLibrarySound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addEmbededOrLibrarySound(sndClassName:Class, sndName:String, vol:Number = 1, startTime:Number = 0, loops:int = 0):Boolean</code><p>
+   </p><p>Used to add a sound that has been added to your library or embeded as a class in your project</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndClassName</span>:Class</code> &mdash; - the class of the sound that you would like to use
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name you wish to use for the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vol</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - the volume at which the sound should be played
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - the start time to be used when playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - the amount of loops that the should should be played
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+   </td>
+</tr>
+</table>
+</div>
+<a name="addExternalSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addExternalSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addExternalSound(sndPath:String, sndName:String, buffer:Number = 1000, vol:Number = 1, startTime:Number = 0, loops:int = 0, checkPolicyFile:Boolean = false):Boolean</code><p>
+   </p><p>Used to add a sound that is extrnaly located</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndPath</span>:String</code> &mdash; - the direct path or url the sound you wish to use
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name you wish you use for this sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">buffer</span>:Number</code> (default = <code>1000</code>)<code></code> &mdash; - the amount of buffer to be used on the external sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vol</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - the volume to be used when playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - the start time to be used when playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - the amount of loops this sound should be played
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">checkPolicyFile</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; - is there a policy file that needs to be checked while loading the sound file
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+   </td>
+</tr>
+</table>
+</div>
+<a name="addSoundToGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addSoundToGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addSoundToGroup(sndName:String, groupName:String):void</code><p>
+   </p><p> can be used to add a sound to an existing sound group</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to add
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">groupName</span>:String</code> &mdash; - the name of the group you wish to add the sound too
+   </td>
+</tr>
+</table>
+</div>
+<a name="createSoundGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function createSoundGroup(sndGrpName:String, groupItems:Vector):Boolean</code><p>
+   </p><p>Used to create a new sound group</p>
+   <p>In order to create a sound group all of the sounds must all ready be added using addEmbededOrLibrarySound or addExternalSound</p>
+   <p>Using a sound group you can manage the state of one or more sounds by using a single call ie. play, stop, pause</p>
+   <p>Individual sounds may be used in more than one group</p>
+   <p>Dispatches the GROUP_ADDED DataEvent with a value of "sndGroupName"</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndGrpName</span>:String</code> &mdash; - the name you wish to use for the sound group
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">groupItems</span>:Vector</code> &mdash; - a vector containing the names of the sound objects to be used in the sound group
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">addEmbededOrLibrarySound<br>addExternalSound</div>
+</div>
+<a name="fadeSoundGroupVolume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fadeSoundGroupVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function fadeSoundGroupVolume(groupName:String, length:Number, targetVol:Number):void</code><p>
+   </p><p>fades the volume of a sound group to a specified volume over a length of time</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">groupName</span>:String</code> &mdash; - the name of the sound group whos volume you wish to fade
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">length</span>:Number</code> &mdash; - the length of the fade in seconds
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">targetVol</span>:Number</code> &mdash; - the volume you wish to fade to ... value 0-1
+   </td>
+</tr>
+</table>
+</div>
+<a name="fadeSoundVolume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fadeSoundVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function fadeSoundVolume(sndName:String, length:Number, targetVol:Number):void</code><p>
+   </p><p>fades the volume of a sound to a specified volume over a length of time</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound whos volume you wish to fade
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">length</span>:Number</code> &mdash; - the length of the fade in seconds
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">targetVol</span>:Number</code> &mdash; - the volume you wish to fade to ... value 0-1
+   </td>
+</tr>
+</table>
+</div>
+<a name="getInstance()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getInstance</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getInstance():<a href="../soundcontroller/SoundController.html">SoundController</a></code><p>
+   </p><p>Used to return the current instance of the class</p>
+   <p>Please use this insted of the Main Constructor</p>
+   <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../soundcontroller/SoundController.html">SoundController</a></code> &mdash; 
+                        SoundController
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="muteGlobalAudio()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">muteGlobalAudio</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function muteGlobalAudio():void</code><p>
+   </p><p>This method is used to mute the global volume of a flash project using SoundMixer</p>
+   <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL MUTE"</p>
+   </div>
+<a name="pauseAllSounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pauseAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pauseAllSounds():void</code><p>
+   </p><p>Used to pause all sounds in the controller</p>
+   </div>
+<a name="pauseSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pauseSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pauseSound(sndName:String):void</code><p>
+   </p><p>used to pause a sound that is playing</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to pause
+   </td>
+</tr>
+</table>
+</div>
+<a name="pauseSoundGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pauseSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pauseSoundGroup(sndGroupName:String):void</code><p>
+   </p><p>Used to pause a sound group that is currently playing</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you would wish to pause
+   </td>
+</tr>
+</table>
+</div>
+<a name="playAllSounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">playAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function playAllSounds():void</code><p>
+   </p><p>Used to play all of the sounds in the library at once</p>
+   </div>
+<a name="playSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">playSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function playSound(sndName:String, useSndProps:Boolean = true, volume:Number = 1, startTime:Number = 0, loops:int = 0, useDelay:Boolean = false, delayInSeconds:Number = 0):void</code><p>
+   </p><p>Used to play a sound that has been added to the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to play
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useSndProps</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; - would you like to use the current properties associated with the sound, or supply new ones through the method parameters
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">volume</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; - if useSoundProps = true, this new volume will be used when playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - if useSoundProps = true, this new startTime will be used when playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loops</span>:int</code> (default = <code>0</code>)<code></code> &mdash; - if useSoundProps = true, this amount will over ride the current amount of loops that the sound plays
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useDelay</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; - if true a delay will be used before playing the sound
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">delayInSeconds</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; - if useDelay = true, the sound will be delayed "x" seconds before playing
+   </td>
+</tr>
+</table>
+</div>
+<a name="playSoundGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">playSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function playSoundGroup(groupName:String):void</code><p>
+   </p><p>Used to play a sound group that has been registered with the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">groupName</span>:String</code> &mdash; - the name of the sound group you wish to play
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeAllSounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeAllSounds():void</code><p>
+   </p><p>Used to remove all of the sounds from the controller</p>
+   <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
+   <p>Dispatches the SOUND_ADDED DataEvent with a value of "ALL SOUNDS"</p>
+   </div>
+<a name="removeSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeSound(sndName:String):Boolean</code><p>
+   </p><p>Used to remove a sound from the controller</p>
+   <p>Once a sound is removed you will no longer be able to manage it through the SoundController, and all referances and listeners will be removed</p>
+   <p>Dispatches the SOUND_REMOVED DataEvent with a value of "sndName"</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to remove
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeSoundGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeSoundGroup(sndGroupName:String):Boolean</code><p>
+   </p><p>Used to remove a sound group from the controller</p>
+   <p>Once a sound group is removed from the controller all referances and listeners will be removed.</p>
+   <p>The sounds associated with the group will still remain the in controller</p>
+   <p>Dispatches the GROUP_REMOVED DataEvent with a value of "sndGroupName"</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you wish to remove
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">removeSound</div>
+</div>
+<a name="setGobalVolume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setGobalVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setGobalVolume(globalVol:Number):void</code><p>
+   </p><p>this method is used to set the global volume of a flash project using SoundMixer</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">globalVol</span>:Number</code> &mdash; - the new volume to be used
+   <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL VOL CHANGE :: {globalVol}"</p>
+   </td>
+</tr>
+</table>
+</div>
+<a name="setSoundLoops()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSoundLoops</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSoundLoops(sndName:String, loopAmount:int):void</code><p>
+   </p><p>Sets the amount of loops for a sound that has been registered with the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the loop amount of
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loopAmount</span>:int</code> &mdash; - the new amount of loops to use when playing the song
+   </td>
+</tr>
+</table>
+</div>
+<a name="setSoundStartTime()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSoundStartTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSoundStartTime(sndName:String, startTime:Number):void</code><p>
+   </p><p>Sets the start time of a sound that has been registered with the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the start time of
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startTime</span>:Number</code> &mdash; - the new start time to use
+   </td>
+</tr>
+</table>
+</div>
+<a name="setSoundVolume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSoundVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSoundVolume(sndName:String, newVol:Number):void</code><p>
+   </p><p>Sets the volume of a sound that has been registered with the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the sound you wish to change the volume of
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">newVol</span>:Number</code> &mdash; - the volume to use
+   </td>
+</tr>
+</table>
+</div>
+<a name="stopAllSounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stopAllSounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function stopAllSounds():void</code><p>
+   </p><p>Used to stop all sounds in the controller</p>
+   </div>
+<a name="stopSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stopSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function stopSound(sndName:String):void</code><p>
+   </p><p>Used to stop a sound</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndName</span>:String</code> &mdash; - the name of the sound you wish to stop
+   </td>
+</tr>
+</table>
+</div>
+<a name="stopSoundGroup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stopSoundGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function stopSoundGroup(sndGroupName:String):void</code><p>
+   </p><p>Used to stop a sound group that has been registered with the controller</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sndGroupName</span>:String</code> &mdash; - the name of the sound group you wish to stop
+   </td>
+</tr>
+</table>
+</div>
+<a name="unmuteGlobalAudio()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unmuteGlobalAudio</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unmuteGlobalAudio():void</code><p>
+   </p><p>This method is used to unmute the global volume of a flash project using SoundMixer</p>
+   <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL UNMUTE"</p>
+   </div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="GLOBAL_VOLUME_CHANGE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">GLOBAL_VOLUME_CHANGE</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const GLOBAL_VOLUME_CHANGE:String = "theGlobalVolumeHasBeenChanged"</code>
+</div>
+<a name="GROUP_ADDED"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">GROUP_ADDED</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const GROUP_ADDED:String = "aSoundGroupHasBeenAddedToSoundController"</code>
+</div>
+<a name="GROUP_REMOVED"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">GROUP_REMOVED</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const GROUP_REMOVED:String = "aSoundGroupHasBeenRemovedToSoundController"</code>
+</div>
+<a name="SOUND_ADDED"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SOUND_ADDED</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SOUND_ADDED:String = "aSoundHasBeenAddedToSoundController"</code>
+</div>
+<a name="SOUND_REMOVED"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SOUND_REMOVED</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SOUND_REMOVED:String = "aSoundHasBeenRemovedFromSoundController"</code>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
