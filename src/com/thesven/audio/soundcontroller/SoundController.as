@@ -1,4 +1,4 @@
-package com.thesven.audio.soundcontroller {
+﻿package com.thesven.audio.soundcontroller {
 	import com.thesven.audio.soundcontroller.objects.SoundGroup;
 	import com.thesven.audio.soundcontroller.objects.SoundObject;
 	
@@ -395,7 +395,7 @@ package com.thesven.audio.soundcontroller {
 		 */
 		public function stopAllSounds():void{
 			
-			if(_sounds.length > 1) {
+			if(_sounds.length > 0) {
 			
 				for each(var s:SoundObject in _sounds) {
 					s.stop();
