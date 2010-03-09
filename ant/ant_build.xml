@@ -21,6 +21,8 @@
 							target="${release.dir}/${swc.name}"
 							compilerarguments="-target-player=10
 											   -use-network=false"/>
+											   
+		<antcall target="convert-swc-to-swf" />
 	</target>
 		
 	<target name="generate-docs-mac">
