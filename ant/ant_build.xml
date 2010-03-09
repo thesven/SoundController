@@ -10,6 +10,7 @@
 	<property name="asdoc.loc.win" value="c:/flex_sdk_3.5a/bin/asdoc.exe" />
 	<property name="asdoc.loc.mac" value="c:/flex_sdk_3.5a/bin/asdoc" />
 	<property name="optimizer.loc" value="c:/flex_sdk_3.5a/lib/optimizer.jar" />
+	<property name="digest.loc" value="c:/flex_sdk_3.5a/lib/digest.jar" />
 	
 	<target name="compile-swc">
 		<echo>[reset] resetting fcsh</echo>
@@ -42,6 +43,38 @@
 					   -window-title 'SoundController API Docs'
 				      -target-player=10"/>
 		</exec>
+	</target>
+	
+	<target name="convert-swc-to-swf">
+		<sequential>
+			<unzip src="${release.dir}/${swc.name}" dest="${release.dir}" >
+				<patternset>
+					<include name="library.swf"/>
+				</patternset>
+			</unzip>
+			
+			<move file="${release.dir}/library.swf" tofile="${release.dir}/final.swf" />
+			
+			<antcall target="optimize-swf-lib" />
+			<antcall target="digest-swf-to-swc" />
+			
+			<delete file="${release.dir}/final.swf" />
+			
+		</sequential>
+	</target>
+	
+	<target name="optimize-swf-lib">
+		<java jar="${optimizer.loc}" fork="true" failonerror="true">
+			<jvmarg line="-ea -DAS3 -DAVMPLUS -Dflexlib=c:/flex_sdk_3.5a/frameworks -Xms32m -Xmx384m -Dsun.io.useCanonCaches=false"/>
+			<arg line="'${release.dir}/final.swf' --output '${release.dir}/testFinal.swf' "/>
+		</java>
+	</target>
+	
+	<target name="digest-swf-to-swc">
+		<java jar="${digest.loc}" fork="true" failonerror="true">
+			<jvmarg line="-ea -DAS3 -DAVMPLUS -Dflexlib=c:/flex_sdk_3.5a/frameworks -Xms32m -Xmx384m -Dsun.io.useCanonCaches=false"/>
+			<arg line="--digest.rsl-file  ${release.dir}/testFinal.swf --digest.swc-path ${release.dir}/${swc.name}"/>
+		</java>
 	</target>
 	
 </project>

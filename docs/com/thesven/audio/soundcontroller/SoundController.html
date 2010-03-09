@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
-<meta content="SoundController,com.thesven.audio.soundcontroller.SoundController,GLOBAL_VOLUME_CHANGE,GROUP_ADDED,GROUP_REMOVED,SOUND_ADDED,SOUND_REMOVED,_soundController,_soundGroupDict,_soundGroups,_sounds,_soundsDict,addEmbededOrLibrarySound,addExternalSound,addSoundToGroup,createSoundGroup,fadeSoundGroupVolume,fadeSoundVolume,getInstance,muteGlobalAudio,pauseAllSounds,pauseSound,pauseSoundGroup,playAllSounds,playSound,playSoundGroup,removeAllSounds,removeSound,removeSoundGroup,setGobalVolume,setSoundLoops,setSoundStartTime,setSoundVolume,stopAllSounds,stopSound,stopSoundGroup,unmuteGlobalAudio" name="keywords">
+<meta content="SoundController,com.thesven.audio.soundcontroller.SoundController,GLOBAL_VOLUME_CHANGE,GROUP_ADDED,GROUP_REMOVED,SOUND_ADDED,SOUND_REMOVED,_soundController,_soundGroupDict,_soundGroups,_sounds,_soundsDict,addEmbededOrLibrarySound,addExternalSound,addLibrarySound,addSoundToGroup,createSoundGroup,fadeSoundGroupVolume,fadeSoundVolume,getInstance,muteGlobalAudio,pauseAllSounds,pauseSound,pauseSoundGroup,playAllSounds,playSound,playSoundGroup,removeAllSounds,removeSound,removeSoundGroup,setGobalVolume,setSoundLoops,setSoundStartTime,setSoundVolume,stopAllSounds,stopSound,stopSoundGroup,unmuteGlobalAudio" name="keywords">
 <title>com.thesven.audio.soundcontroller.SoundController</title>
 </head>
 <body>
@@ -111,6 +111,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
    <p>Used to add a sound that is extrnaly located</p>
    <p>Dispatches the SOUND_ADDED DataEvent with a value of "sndName"</p>
    </div>
+</td><td class="summaryTableOwnerCol">SoundController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addLibrarySound()">addLibrarySound</a>(linkageID:*, soundName:String):Boolean</div>
+<div class="summaryTableDescription">
+   <p>This method is only here for backwards compatability reasons.</div>
 </td><td class="summaryTableOwnerCol">SoundController</td>
 </tr>
 <tr class="">
@@ -554,6 +562,35 @@ showHideInherited();
 <tr>
 <td width="20"></td><td><code>Boolean</code> &mdash; Boolean
    </td>
+</tr>
+</table>
+</div>
+<a name="addLibrarySound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addLibrarySound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addLibrarySound(linkageID:*, soundName:String):Boolean</code><p>
+   </p><p>This method is only here for backwards compatability reasons.  Please do not use it if it is not required. Use addEmbededOrLibrarySound()</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">linkageID</span>:*</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">soundName</span>:String</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
 </tr>
 </table>
 </div>
