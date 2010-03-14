@@ -1,7 +1,7 @@
 package com.thesven.audio.soundcontroller {
+	import flash.utils.getDefinitionByName;
 	import com.thesven.audio.soundcontroller.objects.SoundGroup;
 	import com.thesven.audio.soundcontroller.objects.SoundObject;
-	
 	import com.thesven.audio.soundcontroller.utils.SoundControllerUtils;
 
 	import flash.events.DataEvent;
@@ -13,7 +13,7 @@ package com.thesven.audio.soundcontroller {
 	import flash.net.URLRequest;
 	import flash.utils.Dictionary;
 	import flash.utils.setTimeout;
-	
+
 	/**
 	 * @author michaelsvendsen
 	 */
@@ -112,6 +112,16 @@ package com.thesven.audio.soundcontroller {
 			
 		}
 		
+		/**
+		 * <p>This method is only here for backwards compatability reasons.  Please do not use it if it is not required. Use addEmbededOrLibrarySound()</p>
+		 */
+		 public function addLibrarySound(linkageID:*, soundName:String):Boolean{
+		 
+		 	var sndClass:Class = ((linkageID is String) ? getDefinitionByName(linkageID) : linkageID) as Class;
+		 	return addEmbededOrLibrarySound(sndClass, soundName);
+		 	
+		}
+
 		/**
 		 * <p>Used to create a new sound group</p>
 		 * <p>In order to create a sound group all of the sounds must all ready be added using addEmbededOrLibrarySound or addExternalSound</p>
@@ -302,7 +312,7 @@ package com.thesven.audio.soundcontroller {
 		 * <p>Used to play all of the sounds in the library at once</p>
 		 */
 		public function playAllSounds():void{
-			if(_sounds.length > 1) {
+			if(_sounds.length > 0) {
 			
 				for each(var s:SoundObject in _sounds) {
 					s.play();
@@ -349,7 +359,7 @@ package com.thesven.audio.soundcontroller {
 		 * <p>Used to pause all sounds in the controller</p>
 		 */
 		public function pauseAllSounds():void{
-			if(_sounds.length > 1) {
+			if(_sounds.length > 0) {
 			
 				for each(var s:SoundObject in _sounds) {
 					s.pause();
@@ -395,7 +405,7 @@ package com.thesven.audio.soundcontroller {
 		 */
 		public function stopAllSounds():void{
 			
-			if(_sounds.length > 1) {
+			if(_sounds.length > 0) {
 			
 				for each(var s:SoundObject in _sounds) {
 					s.stop();
@@ -421,6 +431,7 @@ package com.thesven.audio.soundcontroller {
 				SoundControllerUtils.throwError('SoundController', 'stopSoundGroup', 'There is no sound group by the name ::' + sndGroupName);
 			}
 		}
+		
 		
 		/**
 		 * <p>This method is used to mute the global volume of a flash project using SoundMixer</p>
