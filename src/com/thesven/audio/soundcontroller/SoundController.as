@@ -422,7 +422,6 @@ package com.thesven.audio.soundcontroller {
 			}
 		}
 		
-		
 		/**
 		 * <p>This method is used to mute the global volume of a flash project using SoundMixer</p>
 		 * <p>Dispatches the GLOABL_VOLUME_CHANGE DataEvent with value "GLOBAL MUTE"</p>
