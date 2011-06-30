@@ -296,10 +296,15 @@ package com.thesven.audio.soundcontroller {
 					snd.loops = loops;
 				}
 				
-				if(useDelay) {
-					setTimeout(snd.play, delayInSeconds * 1000);
+				if(snd.paused){
+					trace('Playing sound ::', sndName);
+					if(useDelay) {
+						setTimeout(snd.play, delayInSeconds * 1000);
+					} else {
+						snd.play();	
+					}
 				} else {
-					snd.play();	
+					trace('sound is not paused');
 				}
 				
 			} else {

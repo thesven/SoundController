@@ -42,14 +42,12 @@ package com.thesven.audio.soundcontroller.objects {
 			_loops = loopAmount;
 			_muted = false;
 			
-			_channel.addEventListener(Event.SOUND_COMPLETE, _soundComplete);
 		}
 		
 		public function destroy():void{
 			
 			stop();
 			
-			_channel.removeEventListener(Event.SOUND_COMPLETE, _soundComplete);
 			_channel = null;
 			_sound = null;
 			
@@ -61,6 +59,7 @@ package com.thesven.audio.soundcontroller.objects {
 				var playVolume:Number = (_muted) ? 0 : _volume;
 				var newStartTime:Number = (_paused) ? _position : _startTime;
 				_channel = _sound.play(newStartTime, loops, new SoundTransform(playVolume));
+				_channel.addEventListener(Event.SOUND_COMPLETE, _soundComplete);
 				_paused = false;
 			}
 			
@@ -143,6 +142,7 @@ package com.thesven.audio.soundcontroller.objects {
 		}
 
 		protected function _soundComplete(e:Event):void {
+			_channel.removeEventListener(Event.SOUND_COMPLETE, _soundComplete);
 			_paused = true;
 		}
 		
